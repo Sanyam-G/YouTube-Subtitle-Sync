@@ -1,6 +1,6 @@
 # YouTube Subtitle Sync Refresher
 
-This script was created to fix an annoying issue where YouTube subtitles can lag, skip lines, or go out of sync when you watch videos at fast playback speeds (like 2x, 3x, etc.). If your subtitles can't keep up when you speed things up, this script aims to help!
+This script was vibe-coded to fix an annoying issue where YouTube subtitles can lag, skip lines, or go out of sync when you watch videos at fast playback speeds (like 2x, 3x, etc.). If your subtitles can't keep up when you speed things up, this script aims to help!
 
 ## How It Works
 
@@ -22,7 +22,7 @@ When you're watching a YouTube video faster than a certain value (2.7x by defaul
 ## How to Install
 
 1.  **Get a Userscript Manager:** First, you need a browser extension that handles userscripts. A popular one is:
-    * [Tampermonkey](https://www.tampermonkey.net/) (available for Chrome, Firefox, Edge, Safari, Opera, and more)
+    * [Tampermonkey](https://www.tampermonkey.net/) 
       *(You can also use other managers like Violentmonkey or Greasemonkey for Firefox).*
 2.  **Install This Script:**
     * Navigate to the main page of this script's GitHub repository.
