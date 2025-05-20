@@ -21,12 +21,17 @@ When you're watching a YouTube video faster than a certain value (2.7x by defaul
 
 ## How to Install
 
-1.  **Get a Userscript Manager:** First, you need a browser extension that handles userscripts. Good ones are:
-* [Tampermonkey](https://www.tampermonkey.net/) (for Chrome, Firefox, Edge, Safari, Opera)
+1.  **Get a Userscript Manager:** First, you need a browser extension that handles userscripts. A popular one is:
+    * [Tampermonkey](https://www.tampermonkey.net/) (available for Chrome, Firefox, Edge, Safari, Opera, and more)
+      *(You can also use other managers like Violentmonkey or Greasemonkey for Firefox).*
 2.  **Install This Script:**
-* If you got this script from GitHub (or a site like Greasy Fork), look for a "Raw" button or an "Install" button. Your userscript manager should see it and ask if you want to install.
-* Or, you can create a new script in your userscript manager and just paste all the script code into it.
-
+    * Navigate to the main page of this script's GitHub repository.
+    * Find the script file `YouTubeHighSpeedSubtitleFix.user.js`.
+    * Click on the script file to view its content.
+    * Click the **"Raw"** button (usually located near the top right of the file view).
+    * Your userscript manager (e.g., Tampermonkey) should automatically detect the raw script and open a new tab or prompt you to install it.
+    * Confirm the installation in your userscript manager.
+    
 ## User Settings
 
 Look at the top of the script file. You'll see a section with settings you can easily change:
@@ -52,7 +57,5 @@ const CAPTION_DIALOG_SELECTOR = ".caption-window.ytp-caption-window-top"; // CSS
 ## Important Notes & Troubleshooting
 
 * **YouTube Updates:** The main challenge with scripts like this is that YouTube changes its site often. An update can break how the script finds the player or hides the pop-up. If it stops working, it might need adjustments.
-* **Finding the Player:** The script does its best to find YouTube's player controls, but this isn't an official method and could fail if YouTube makes big changes.
-* **Hiding the Pop-up (Again):** If the CAPTION_DIALOG_SELECTOR is wrong or YouTube changes its pop-up structure, the pop-up might not be hidden, or (rarely) other things might get hidden if the selector accidentally becomes too broad. Double-check it if you have issues.
 * **Performance:** The script is designed to be very light. With default settings, you shouldn't notice any performance hit on a modern computer.
 * **Debug Mode:** If things aren't working, the first step is to set DEBUG_LOGGING = true; and check your browser's console (F12) for messages from the script. This often shows where the problem might be (e.g., "Player instance not found").
