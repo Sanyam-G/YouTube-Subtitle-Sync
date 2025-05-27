@@ -3,7 +3,6 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
 // @description  Keeps YouTube subtitles synced at high playback speeds by briefly toggling them via player API, aiming for an imperceptible refresh.
-// @author       AI Assistant & User Collaboration
 // @match        *://www.youtube.com/watch*
 // @match        *://www.youtube.com/embed/*
 // @grant        GM_addStyle
